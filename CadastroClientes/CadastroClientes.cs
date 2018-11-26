@@ -31,31 +31,7 @@ namespace CadastroClientes
             {
                 MessageBox.Show(ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }
-
-        public class Pessoa
-        {
-            //criação dos metodos. Encapsulamento da variável, tornando-a privada e acessando por metodos. Propriedades auto-implementadas
-            public string Nome { get; set; }
-            public string Endereco { get; set; }
-           
-            public override string ToString()
-            {
-                return Nome + "\t";
-            } 
-        }
-
-        public class PessoaFisica : Pessoa
-        {
-            public string RG { get; set; }
-            public string CPF { get; set; }
-        }
-
-        public class PessoaJuridica : Pessoa
-        {
-            public string CNPJ { get; set; }
-            public string IE { get; set; }
-        }
+        }                             
 
         private void btnPessoaFisica_Click(object sender, EventArgs e)
         {
